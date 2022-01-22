@@ -1,0 +1,12 @@
+Feature: To test open bets details functionality in jennings website 
+
+@Openbets 
+Scenario: Ensure user is able to access open bets and check the details
+
+Given user is on login page of jennings
+When user enters Username "test123" and Password as "Qwerty123" and clicks on login button
+Then verify the user profile and balance displayed in page
+Then user click on openbets link
+Then user page navigates to mybets link
+Then verify user placed bet is displaying in openbets
+And  verify betdetails stake amount returns are correct
